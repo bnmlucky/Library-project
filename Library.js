@@ -3,10 +3,10 @@ class Library {
         this.books = [];
         this.patrons = [];
     }
-    addBook() {
-
+    addBook(book) {
+        this.books.push(book);
     }
-    addPatron() {
-
+    addPatron(patron) {
+        this.patrons.push(patron);
     }
 }

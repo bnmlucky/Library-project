@@ -1,8 +1,8 @@
 <head>
   <title>Library Practice Session</title>
-  <script src = "Book.js"></script>
-  <script src = "Patron.js"></script>
-  <script src = "Library.js"></script>
+  <script src="Book.js"></script>
+  <script src="Patron.js"></script>
+  <script src="Library.js"></script>
 </head>
 
 <body>
@@ -12,12 +12,20 @@
 
 <script>
   // our test code here
-  
+  const library = new Library();
+  const book = new Book('Harry Potter and the Sorcere\'s Stone', 'J.K.Rowling', '978-0439708180');
+  const patron = new Patron('Natalia Titova', 'bnmlucky@gmail.com');
+  library.addBook(book);
+  library.addPatron(patron);
+  console.log(library);
 
-  
-  
-  
-  
-  
-  
+
+
+
+
+
+
+
+
+
 </script>
