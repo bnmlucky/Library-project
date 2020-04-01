@@ -17,7 +17,12 @@
   const patron = new Patron('Natalia Titova', 'bnmlucky@gmail.com');
   library.addBook(book);
   library.addPatron(patron);
-  console.log(library);
+
+  patron.checkOut(book);
+  patron.returnBook(book);
+  console.log(patron);
+  console.log(book);
+
 
 
 
