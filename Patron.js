@@ -6,22 +6,6 @@ class Patron {
         this.balance = 0;
     }
 
-    set out(out) {
-        this._out = out;
-
-        if (out) {
-            const newDueDate = new Date();
-            newDueDate.setDate(newDueDate.getDate + 14);
-            this.dueDate = newDueDate;
-        } else {
-            this.dueDate = null;
-        }
-    }
-
-    get out() {
-        return this._out;
-    }
-
     checkOut(book) {
         this.currentBook = book;
         book.out = true;
