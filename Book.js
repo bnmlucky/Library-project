@@ -3,9 +3,9 @@ class Book {
         this.title = title;
         this.author = author;
         this.isbn = isbn;
-        this._out = false;
-        this.dueDate = null;
         this.patron = null;
+        this.dueDate = null;
+        this._out = false;
     }
 
     get out() {
@@ -17,7 +17,7 @@ class Book {
 
         if (out) {
             const newDueDate = new Date();
-            newDueDate.setDate(newDueDate.getDate + 14);
+            newDueDate.setDate(newDueDate.getDate() - 14);
             this.dueDate = newDueDate;
         } else {
             this.dueDate = null;
